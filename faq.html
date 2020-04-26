@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/accordian.css">
     <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/Team-Boxed.css">
@@ -22,7 +24,7 @@
         <div class="container"><a class="navbar-brand" href="index.html" style="height: 60px;">TJHSST SPEECH</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
             <div
                 class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="nav navbar-nav ml-auto">
+                <ul class="nav navbar-nav mx-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="../about-us/about.html">RESOURCES</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item text-black-50" role="presentation" href="schedule.html" style="background-color: rgba(31,86,26,0.01);font-size: 12px;">SCHEDULE</a>
@@ -31,7 +33,7 @@
                             <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item text-black-50" role="presentation" href="nsda-recording.html" style="background-color: rgba(31,86,26,0);font-size: 12px;">NSDA RECORDING</a>
                             <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item text-black-50" role="presentation" href="faq.html" style="background-color: rgba(31,86,26,0);font-size: 12px;">FAQ</a></div>
                     </li>
-                    <li class="nav-item dropdown d-xl-flex"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="judging.html">Parents</a>
+                    <li class="nav-item dropdown d-xl-flex" data-bs-hover-animate="bounce"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="judging.html">Parents</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item text-black-50" role="presentation" href="judging.html" style="background-color: rgba(31,86,26,0.01);font-size: 12px;">JUDGING</a>
                             <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item text-black-50" role="presentation" href="fundraisings.html" style="background-color: rgba(31,86,26,0);font-size: 12px;">FUNDRAISING</a></div>
                     </li>
@@ -69,19 +71,127 @@
         </div>
     </header>
     <div class="container">
-        <h3 class="text-left text-primary" style="font-size: 40px;"><br>Questions &amp; Answers</h3>
-        <p style="font-size: 20px;"><strong>What time are WACFLs generally?</strong><br>WACFLs generally run from 8:00 am to 4:00 pm. You are welcome to stay for the award ceremony which lasts for approximately half an hour.<br><br><strong>Do I have to stay for the awards ceremony?</strong><br>If
-            you have a scheduled conflict or issue, it is acceptable to leave prior to the award ceremony. However, we highly encourage all members to stay regardless if they performed well or not! They can cheer and congratulate fellow competitors and
-            support TJ performers who attained awards.&nbsp;<br><br><strong>Will I be embarrassed by the judge’s comments?</strong><br>Especially for novices who are performing their pieces for the first time or when a round doesn’t go ideally, it’s easy
-            to be dismayed by the judge’s comments. However, allow this negative criticism to be a learning curve and an opportunity to develop for future performances.<br><br><strong>Can I change pieces later in the year if I decide on something better?</strong><br>Absolutely!
-            Part of Interp events is the constant revision and modification process to make it just right for you!&nbsp;<br><br><strong>Can I change categories or compete in multiple categories?</strong><br>If you don’t feel suitable for a particular
-            category, you are completely allowed to switch! You may compete in up to two categories for a specific tournament (e.g. Impromptu and Extemporaneous).&nbsp;<br><br><strong>Do I have to prepare a new piece for each tournament?</strong><br>For
-            the same scholastic year, you are allowed to reuse the same piece. Take each tournament as a means to refine and modify your piece so that it’s more effective for when you perform it the next time.<br><br><strong>Can I use the same piece next year?</strong><br>Unfortunately,
-            you cannot use the same piece as past years no matter how stellar it was and must create a new one!&nbsp;<br><br><strong>Do I have to go to every tournament?</strong><br>Absolutely not! However, dedication and commitment is an extremely large
-            facet in TJ Speech and so attending as many tournaments as possible is a demonstration of one’s engagement. Even if you don’t want to compete at a tournament, we still invite you to attend the tournament as a spectator by watching various
-            events and analyzing the performers’ mannerisms/talents.<br><br><strong>How expensive is competing?</strong><br>For a local tournament, the price of competing, which includes registration and lunch, is approximately $25. Those who are double
-            entered will be expected to pay more. At national tournaments, the price of competing can range between $250-$300 depending on the location of the university.<br><br></p>
+        <h3 class="text-left text-primary" style="font-size: 40px;"><br>Questions &amp; Answers<br><br></h3>
+<div class="container">
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+             <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              What time are WACFLs generally?
+              </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">WACFLs generally run from 8:00 am to 4:00 pm. You are welcome to stay for the award ceremony which lasts for approximately half an hour.</div>
+        </div>
     </div>
+    <hr class="solid">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+             <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Do I have to stay for the awards ceremony?
+              </a>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">If you have a scheduled conflict or issue, it is acceptable to leave prior to the award ceremony. However, we highly encourage all members to stay regardless if they performed well or not! They can cheer and congratulate fellow competitors and support TJ performers who attained awards. </div>
+        </div>
+    </div>
+    <hr class="solid">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+             <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Will I be embarrassed by the judge’s comments?
+              </a>
+            </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">Especially for novices who are performing their pieces for the first time or when a round doesn’t go ideally, it’s easy to be dismayed by the judge’s comments. However, allow this negative criticism to be a learning curve and an opportunity to develop for future performances. </div>
+        </div>
+    </div>
+    <hr class="solid">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFour">
+             <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Can I change pieces later in the year if I decide on something better?
+              </a>
+            </h4>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="panel-body">Absolutely! Part of Interp events is the constant revision and modification process to make it just right for you! </div>
+        </div>
+    </div>
+    <hr class="solid">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFive">
+             <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Can I change categories or compete in multiple categories?
+              </a>
+            </h4>
+        </div>
+        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+            <div class="panel-body">If you don’t feel suitable for a particular category, you are completely allowed to switch! You may compete in up to two categories for a specific tournament (e.g. Impromptu and Extemporaneous). </div>
+        </div>
+    </div>
+    <hr class="solid">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingSix">
+             <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Do I have to prepare a new piece for each tournament?
+              </a>
+            </h4>
+        </div>
+        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+            <div class="panel-body">For the same scholastic year, you are allowed to reuse the same piece. Take each tournament as a means to refine and modify your piece so that it’s more effective for when you perform it the next time. </div>
+        </div>
+    </div>
+    <hr class="solid">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingSeven">
+             <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              Can I use the same piece next year?
+              </a>
+            </h4>
+        </div>
+        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+            <div class="panel-body">Unfortunately, you cannot use the same piece as past years no matter how stellar it was and must create a new one! </div>
+        </div>
+    </div>
+    <hr class="solid">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingEight">
+             <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                Do I have to go to every tournament?
+              </a>
+            </h4>
+        </div>
+        <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+            <div class="panel-body">Absolutely not! However, dedication and commitment is an extremely large facet in TJ Speech and so attending as many tournaments as possible is a demonstration of one’s engagement. Even if you don’t want to compete at a tournament, we still invite you to attend the tournament as a spectator by watching various events and analyzing the performers’ mannerisms/talents. </div>
+        </div>
+    </div>
+    <hr class="solid">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingNine">
+             <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+              How expensive is competing?
+              </a>
+            </h4>
+        </div>
+        <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+            <div class="panel-body">For a local tournament, the price of competing, which includes registration and lunch, is approximately $25. Those who are double entered will be expected to pay more. At national tournaments, the price of competing can range between $250-$300 depending on the location of the university. </div>
+        </div>
+    </div>
+</div>
+</div></div>
     <footer>
         <div class="container">
             <div class="row">
@@ -94,6 +204,7 @@
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/clean-blog.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
